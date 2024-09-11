@@ -1,35 +1,38 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    overflow-x: hidden;
-}
-
-
-.parallax1 {
-    height: 100vh; 
-    background-image: url('https://blackpinkupdate.com/wp-content/uploads/2017/12/blackpink-jisoo-car-photos-bunny-bowler-hat-11.jpg'); 
-    background-attachment: fixed; 
+.pal {
+    background-attachment: fixed;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.parallax2 {
-    height: 100vh; 
-    background-image: url('https://a.pinatafarm.com/284x177/26bb7abed4/crying-because-of-cute.jpg'); 
-    background-attachment: fixed; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.content {
-    height: 100vh; 
-    background-color: #f1f1f1; 
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2em;
-    text-align: center;
-}
+    font-size: 2rem;
+    color: white;
+  }
+  
+  
+  .palallax1 {
+    background-image: url("https://blackpinkupdate.com/wp-content/uploads/2017/12/blackpink-jisoo-car-photos-bunny-bowler-hat-11.jpg");
+  }
+  
+  .palallax2 {
+      background-image: url("https://a.pinatafarm.com/284x177/26bb7abed4/crying-because-of-cute.jpg");
+  }
+  
+  .textbox {
+    display: flex;
+    height: 40%;
+    /* width: 100%; */
+    align-items: end;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
