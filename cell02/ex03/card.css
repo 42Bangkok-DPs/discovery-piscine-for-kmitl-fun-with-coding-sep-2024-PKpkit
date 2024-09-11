@@ -1,0 +1,23 @@
+td.jisoo img{
+    height: 255px;
+    width: 170px;
+}
+td{
+    text-align: center;
+}
+table{
+    width: 100%;
+}
+td.icon img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: right;
+}
+html,body{
+    background-color: antiquewhite;
+}
+.contact{
+    margin-top: 10px;
+    background-color: skyblue;
+}
