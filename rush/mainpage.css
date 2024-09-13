@@ -1,0 +1,273 @@
+/* General styles */
+@font-face {
+    font-family: Minion;
+    src: url(THE\ MINION.ttf);
+}
+body {
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #fff;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.logo img {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+
+.hero-text {
+    font-size: 15rem;
+    color: #ffcc00;
+    margin-top: 30px;
+}
+
+.subtext {
+    font-size: 2rem;
+    color: #333;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.minions-image img {
+    width: 75%;
+    margin-top: 10px;
+    height: 75%;
+}
+
+
+.pr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: rgb(246, 198, 22);
+}
+.pr .pr-text{
+    font-family: "Rubik",sans-serif;
+    color: #222;
+    font-size: 5rem
+    ;
+}
+.pr img{
+    float: right;
+}
+
+/* Introduction Section */
+#introduction {
+    padding: 60px 20px;
+    background-color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.description {
+    font-size: 2.5rem;
+}
+
+introduction .img{
+    width: auto;
+    height: auto;
+}
+
+/* Meet Minion Section */
+#meet-minion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: rgb(246, 198, 22);
+}
+
+.meet h2 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.meet h1 {
+    font-family: Minion;
+    font-size: 5rem;
+    color: #fff;
+}
+
+.meet p {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.minion-image img {
+    width: 300px;
+}
+.meet .play-button a {
+    text-decoration: none;
+    color: white;
+    background-color: #ff6f00;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1.5em;
+}
+
+/*minion evil*/
+#minion-evil {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: rgb(187,159,226);
+}
+
+.evil h2 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.evil h1 {
+    font-family: Minion;
+    font-size: 5rem;
+    color: #fff;
+}
+
+.evil p {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.evil-image img {
+    width: 400px;
+}
+.evil .play-button a {
+    text-decoration: none;
+    color: white;
+    background-color: #ff6f00;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1.5em;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2fr;
+
+    h2 {
+        font-size: clamp(0.0625rem, 0.0625rem + 2.9375vw, 3rem);
+    }
+
+}
+
+.carousel {
+    --border-radius: 30px;
+
+    min-width: 45%;
+    margin: 0 auto 5%;
+    aspect-ratio: 1.4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 20%;
+    gap: clamp(0.0625rem, 0.0625rem + 1.4375vw, 1.5rem);
+    overflow: hidden;
+
+    div {
+        overflow: hidden;
+    }
+
+    img {
+        object-fit: cover;
+        max-width: 100%;
+    }
+
+    .display {
+        display: none;
+        width: 100%;
+        border-radius: var(--border-radius);
+    }
+
+    .display.active {
+        display: block;
+    }
+
+    .slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .item {
+        display: none;
+        width: 25%;
+        padding: 1.5% 3.5%;
+
+        img {
+            border-radius: calc(var(--border-radius) / 4);
+        }
+    }
+
+    .item.active {
+        img {
+            border: 10px solid #ffcc00;
+        }
+    }
+
+    .item.show {
+        display: block;
+    }
+
+    .icon {
+        position: relative;
+        width: 6.5%;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background-color: black;
+
+        img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+        }
+    }
+}
+
+.bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#hero {
+    .minions-image img {
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+
+.finish .enjoy{
+    font-family: "Rubik",sans-serif;
+    font-size: 5rem;
+    color: rgb(246, 198, 22);
+};
+

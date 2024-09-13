@@ -1,0 +1,29 @@
+/* normalize default css properties */
+
+* {
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-app-region: no-drag;
+    cursor: default;
+}
+
+.carousel {
+    button {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-width: 0;
+        background-color: Red;
+        color: White;
+        font-family: sans-serif;
+        font-weight: normal;
+        font-size: inherit;
+        text-decoration: none;
+        line-height: 50px;
+        cursor: pointer;
+        font-size: 100%;
+    }
+}

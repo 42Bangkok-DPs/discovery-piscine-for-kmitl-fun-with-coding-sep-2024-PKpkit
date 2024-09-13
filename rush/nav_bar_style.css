@@ -1,0 +1,62 @@
+@font-face {
+    font-family: Minion;
+    src: url(THE\ MINION.ttf);
+}
+
+body {
+    margin: 0;
+}
+ 
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 10px;
+    background-color: black;
+    justify-content: center;
+    display: flex;
+}
+
+.nav-bar-div1 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    display: flexbox;
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-bar-div2 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    display: flexbox;
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-bar-div1:hover {
+    border-radius: 5px;
+    background-color: rgb(244, 221, 75);
+    color:#333;
+}
+
+.nav-bar-div2:hover {
+    border-radius: 5px;
+    background-color: rgb(187,159,226);
+    color:#333;
+}
+
+#home:hover {
+    border-radius: 5px;
+    background-color: aliceblue;
+    color:#333;
+}
