@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <style>
+        body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        #calc {
+            background-color: hsl(0, 0%, 95%);
+            border-radius: 15px;
+            padding: 25px;
+            max-width: 1000px;
+            text-align: center;
+        }
+        input, select, button {
+            font-size: 1.5rem;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid hsl(0, 0%, 80%);
+        }
+        .input-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        input {
+            width: 45%;
+        }
+
+        #operator {
+            margin: 10px auto;
+        }
+
+        button {
+            background-color: hsl(200, 100%, 40%);
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: hsl(200, 100%, 50%);
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="calc">
+        <div class="input-container">
+            <input type="text" id="left" placeholder="Enter left number">
+            <select id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select>
+            <input type="text" id="right" placeholder="Enter right number">
+        </div>
+        <!--<input type="text" id="left" placeholder="Enter left number">-->
+        <!--<input type="text" id="right" placeholder="Enter right number">-->
+
+        <button id="calculate">Try me!</button>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('#calculate').click(function() {
+                const leftValue = $('#left').val();
+                const operator = $('#operator').val();
+                const rightValue = $('#right').val();
+
+                if (!/^\d+$/.test(leftValue) || !/^\d+$/.test(rightValue)) {
+                    alert("Error :(");
+                    console.log("Error :(");
+                    return;
+                }
+
+                const left = parseInt(leftValue);
+                const right = parseInt(rightValue);
+
+                if ((operator === '/' || operator === '%') && right === 0) {
+                    alert("It's over 9000!");
+                    console.log("It's over 9000!");
+                    return;
+                }
+
+                let result;
+                switch (operator) {
+                    case '+':
+                        result = left + right;
+                        break;
+                    case '-':
+                        result = left - right;
+                        break;
+                    case '*':
+                        result = left * right;
+                        break;
+                    case '/':
+                        result = left / right;
+                        break;
+                    case '%':
+                        result = left % right;
+                        break;
+                }
+
+                alert(`Result: ${result}`);
+                console.log(`Result: ${result}`);
+            });
+
+            setInterval(function() {
+                alert('Please, use me...');
+            }, 30000);
+        });
+    </script>
+</body>
+</html>
